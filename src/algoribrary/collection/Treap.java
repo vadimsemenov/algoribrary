@@ -49,7 +49,7 @@ public class Treap {
         }
     }
 
-    // array keys must be sorted
+    // array 'keys' must be sorted
     public static Treap build(int[] keys, int[] priorities) {
         Treap[] stack = new Treap[keys.length];
         int top = 0;
