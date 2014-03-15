@@ -81,6 +81,17 @@ public class Treap {
         return result;
     }
 
+    public Treap add(int key, int priority) {
+        TreapPair pair = split(key + 1);
+        return merge(merge(pair.first, new Treap(key, priority, null, null)), pair.second);
+    }
+
+    public Treap remove(int key) {
+        TreapPair pair = split(key + 1);
+        TreapPair anotherPair = pair.first.split(key);
+        return merge(anotherPair.first, pair.second);
+    }
+
     private static class TreapPair {
         public final Treap first, second;
 
