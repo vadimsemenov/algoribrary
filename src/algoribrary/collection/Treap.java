@@ -6,6 +6,7 @@ package algoribrary.collection;
 public class Treap {
     private Treap left, right;
     private int key, priority;
+    private int value, update;
 
     public Treap(int key, int priority, Treap left, Treap right) {
         this.key = key;
@@ -30,23 +31,30 @@ public class Treap {
         return result;
     }
 
-    public void split(int key, Treap first, Treap second) {
+
+    public TreapPair split(int key) {
+        Treap first, second;
         Treap newTreap = null;
         if (this.key >= key) {
             if (left == null) {
                 first = null;
             } else {
-                left.split(key, first, newTreap);
+                TreapPair pair = left.split(key);
+                first = pair.first;
+                newTreap = pair.second;
             }
             second = new Treap(this.key, priority, newTreap, right);
         } else {
             if (right == null) {
                 second = null;
             } else {
-                right.split(key, newTreap, second);
+                TreapPair pair = right.split(key);
+                newTreap = pair.first;
+                second = pair.second;
             }
             first = new Treap(this.key, priority, left, newTreap);
         }
+        return new TreapPair(first, second);
     }
 
     // array 'keys' must be sorted
@@ -71,5 +79,14 @@ public class Treap {
             }
         }
         return result;
+    }
+
+    private static class TreapPair {
+        public final Treap first, second;
+
+        private TreapPair(Treap first, Treap second) {
+            this.first = first;
+            this.second = second;
+        }
     }
 }
