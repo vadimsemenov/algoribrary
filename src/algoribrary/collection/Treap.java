@@ -48,4 +48,28 @@ public class Treap {
             first = new Treap(this.key, priority, left, newTreap);
         }
     }
+
+    // array keys must be sorted
+    public static Treap build(int[] keys, int[] priorities) {
+        Treap[] stack = new Treap[keys.length];
+        int top = 0;
+        Treap result = new Treap(keys[0], priorities[0], null, null);
+        stack[top++] = result;
+        for (int current = 1; current < keys.length; current++) {
+            while (top > 0 && stack[top - 1].priority < priorities[current]) {
+                top--;
+                stack[top] = null;
+            }
+            if (top == 0) {
+                result = new Treap(keys[current], priorities[current], result, null);
+                stack[top++] = result;
+            } else {
+                Treap temp = stack[top - 1];
+                temp = new Treap(temp.key, temp.priority, temp.left,
+                        new Treap(keys[current], priorities[current], temp.right, null));
+                stack[top++] = temp.right;
+            }
+        }
+        return result;
+    }
 }
