@@ -8,7 +8,7 @@ import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 /**
- * Created by vadim on 15 Mar 2014.
+ * Created by vadim on 15-03-2014.
  */
 public class InputReader {
     private final BufferedReader reader;
@@ -36,27 +36,38 @@ public class InputReader {
 
     public boolean hasNext() {
         while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-            try {
-                String line = reader.readLine();
-                if (line == null) {
-                    return false;
-                }
-                tokenizer = new StringTokenizer(line);
-            } catch (IOException e) {
-                e.printStackTrace();
+            String line = readLine();
+            if (line == null) {
+                return false;
             }
+            tokenizer = new StringTokenizer(line);
         }
         return true;
     }
 
     public String next() {
         while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-            try {
-                tokenizer = new StringTokenizer(reader.readLine());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            tokenizer = new StringTokenizer(readLine());
         }
         return tokenizer.nextToken();
+    }
+
+    public String readLine() {
+        String line = null;
+        try {
+            line = reader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return line;
+    }
+
+    public void close() {
+        tokenizer = null;
+        try {
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

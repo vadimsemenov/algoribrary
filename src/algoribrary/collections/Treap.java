@@ -1,9 +1,13 @@
-package algoribrary.collection;
+package algoribrary.collections;
 
 /**
- * Created by vadim on 15 Mar 2014.
+ * Created by vadim on 15-03-2014.
  */
 public class Treap {
+    /**
+     * This Treap implementation doesn't work :(
+     * I'll fix this in the feature.
+     */
     private Treap left, right;
     private int key, priority;
     private int value, update;
