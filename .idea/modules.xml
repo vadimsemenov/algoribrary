@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$//algoribrary.iml" filepath="$PROJECT_DIR$//algoribrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algoribrary.iml" filepath="$PROJECT_DIR$/algoribrary.iml" />
     </modules>
   </component>
 </project>
