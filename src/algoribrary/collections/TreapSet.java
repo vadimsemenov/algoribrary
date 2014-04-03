@@ -53,7 +53,7 @@ public class TreapSet {
         size--;
         Node.NodePair pair = root.slowSplit(key + 1);
         Node left = pair.first.slowSplit(key).first;
-        root = left.slowMerge(pair.second);
+        root = left == null ? pair.second : left.slowMerge(pair.second);
     }
 
     // successor
