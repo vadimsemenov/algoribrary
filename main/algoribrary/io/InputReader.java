@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 /**
  * Created by vadim on 15-03-2014.
  */
-public class InputReader {
+public class InputReader implements AutoCloseable {
     private final BufferedReader reader;
     private StringTokenizer tokenizer;
 
@@ -62,12 +62,9 @@ public class InputReader {
         return line;
     }
 
-    public void close() {
+    @Override
+    public void close() throws IOException {
         tokenizer = null;
-        try {
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        reader.close();
     }
 }

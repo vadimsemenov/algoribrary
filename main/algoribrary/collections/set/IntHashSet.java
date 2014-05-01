@@ -9,7 +9,9 @@ import java.util.StringTokenizer;
  * Created by vadim on 19-04-2014.
  */
 public class IntHashSet {
-    private enum State  { EMPTY, ACTUAL, DELETED };
+    private enum State {EMPTY, ACTUAL, DELETED}
+
+    ;
 
     private static final Random RANDOM = new Random();
 
