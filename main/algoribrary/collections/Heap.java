@@ -1,6 +1,6 @@
 package algoribrary.collections;
 
-import algoribrary.collections.comparators.IntComparator;
+import algoribrary.comparators.IntComparator;
 
 import java.util.Arrays;
 

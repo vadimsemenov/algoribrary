@@ -1,9 +1,7 @@
 package algoribrary.collections.set;
 
-import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
-import java.util.StringTokenizer;
 
 /**
  * Created by vadim on 19-04-2014.
@@ -17,26 +15,29 @@ public class IntHashSet {
 
     private static final int MAX_CAPACITY = 1 << 30;
     private static final int RATIO = 2;
-    private static final int[] SHIFTS;
-    private static final int[] ANOTHER_SHIFTS;
+    private static final int SHIFT = RANDOM.nextInt(31) + 1;
+    private static final int ANOTHER_SHIFT = RANDOM.nextInt(31) + 1;
 
-    static {
-        SHIFTS = new int[4];
-        for (int i = 0; i < SHIFTS.length; i++) {
-            SHIFTS[i] = RANDOM.nextInt(31) + 1;
-        }
-        ANOTHER_SHIFTS = new int[4];
-        for (int i = 0; i < ANOTHER_SHIFTS.length; i++) {
-            ANOTHER_SHIFTS[i] = RANDOM.nextInt(31) + 1;
-        }
-    }
+//    private static final int[] SHIFTS;
+//    private static final int[] ANOTHER_SHIFTS;
+
+//    static {
+//        SHIFTS = new int[4];
+//        for (int i = 0; i < SHIFTS.length; i++) {
+//            SHIFTS[i] = RANDOM.nextInt(31) + 1;
+//        }
+//        ANOTHER_SHIFTS = new int[4];
+//        for (int i = 0; i < ANOTHER_SHIFTS.length; i++) {
+//            ANOTHER_SHIFTS[i] = RANDOM.nextInt(31) + 1;
+//        }
+//    }
 
     private int[] elements;
     private State[] states;
     private int size;
 
     public IntHashSet() {
-        this(2);
+        this(8);
     }
 
     public IntHashSet(int capacity) {
@@ -97,13 +98,13 @@ public class IntHashSet {
         int index = hash & (elements.length - 1);
         while (true) {
             if (states[index] == State.EMPTY) {
-                break;
-            } else if (elements[index] == value) {
+                return false;
+            }
+            if (elements[index] == value) {
                 return states[index] == State.ACTUAL;
             }
             index = (index + step) & (elements.length - 1);
         }
-        return false;
     }
 
     public int size() {
@@ -114,27 +115,32 @@ public class IntHashSet {
         return size == 0;
     }
 
+    public void clear() {
+        Arrays.fill(states, State.EMPTY);
+        size = 0;
+    }
+
     private int getHash(int value) {
-        int hash = value;
-        for (int shift : SHIFTS) {
-            hash ^= value >>> shift;
-        }
-        return hash;
+//        int hash = value;
+//        for (int shift : SHIFTS) {
+//            hash ^= value >>> shift;
+//        }
+        return value ^ (value >>> SHIFT);
     }
 
     private int getAnotherHash(int value) {
-        int hash = value;
-        for (int shift : ANOTHER_SHIFTS) {
-            hash ^= value >>> shift;
-        }
-        return hash | 1;
+//        int hash = value;
+//        for (int shift : ANOTHER_SHIFTS) {
+//            hash ^= value >>> shift;
+//        }
+        return (value ^ (value >>> ANOTHER_SHIFT)) | 1;
     }
 
     private void ensureCapacity(int capacity) {
         if (capacity > elements.length) {
-            if (elements.length == MAX_CAPACITY) {
-                throw new OutOfMemoryError("To big capacity: " + capacity);
-            }
+//            if (elements.length == MAX_CAPACITY) {
+//                throw new OutOfMemoryError("To big capacity: " + capacity);
+//            }
             rebuilt(elements.length << 1);
         }
     }
@@ -151,37 +157,5 @@ public class IntHashSet {
                 add(oldElements[i]);
             }
         }
-    }
-
-    public static void main(String[] args) throws IOException {
-        long startTime = System.currentTimeMillis();
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(new FileInputStream("set.in")));
-        PrintWriter writer = new PrintWriter(new FileOutputStream("set.out"));
-        String currentLine = reader.readLine();
-        IntHashSet set = new IntHashSet();
-        StringTokenizer tokenizer;
-        while (currentLine != null) {
-            tokenizer = new StringTokenizer(currentLine);
-            String arg = tokenizer.nextToken();
-            int value = Integer.parseInt(tokenizer.nextToken());
-            switch (arg) {
-                case "insert":
-                    set.add(value);
-                    break;
-                case "delete":
-                    set.delete(value);
-                    break;
-                case "exists":
-                    writer.println(set.contains(value));
-                    break;
-                default:
-                    throw new IllegalArgumentException(currentLine);
-            }
-            currentLine = reader.readLine();
-        }
-        reader.close();
-        writer.close();
-        System.err.println(System.currentTimeMillis() - startTime + ".ms");
     }
 }

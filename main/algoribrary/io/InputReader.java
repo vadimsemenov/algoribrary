@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 /**
  * Created by vadim on 15-03-2014.
  */
-public class InputReader implements AutoCloseable {
+public class InputReader {
     private final BufferedReader reader;
     private StringTokenizer tokenizer;
 
@@ -60,11 +60,5 @@ public class InputReader implements AutoCloseable {
             e.printStackTrace();
         }
         return line;
-    }
-
-    @Override
-    public void close() throws IOException {
-        tokenizer = null;
-        reader.close();
     }
 }
