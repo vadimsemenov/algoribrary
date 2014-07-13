@@ -1,0 +1,38 @@
+6 Waclaw
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+3
+0
+2 T4
+8 T1
+T2
+T3
+1
+1
+4 T11
+
+3 T14
+1
+2
+4 T312
+11 T4
+T314
+T34
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+12 tasks.Waclaw
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.27
+0 
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

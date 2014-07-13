@@ -79,11 +79,14 @@ public class SplayTree {
      * Top-down splay implementation.
      *
      * @param key - after splay tree.root is either greatest element <=
-     *            <code>key</code>, or lest elment >= <code>key</code>
-     *            in the tree.
+     * <code>key</code>, or lest elment >= <code>key</code>
+     * in the tree.
      */
+    private Node header = new Node(0);
+
     private void splay(int key) {
-        Node header = new Node(0);
+        header.left = null;
+        header.right = null;
         Node less, greater;
         less = greater = header;
         Node tree = root;

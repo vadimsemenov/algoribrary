@@ -54,10 +54,10 @@ public class Point {
         );
     }
 
-    public double counterClockWise(Point a, Point b) {
+    public int counterClockWise(Point a, Point b) {
         a = a.subtract(this);
         b = b.subtract(this);
-        return Math.signum(a.scalarProduct(b));
+        return comparator.compare(a.vectorProduct(b), 0);
     }
 
     public double distanceTo(Point other) {
