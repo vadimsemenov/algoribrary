@@ -1,0 +1,32 @@
+6 Signal
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+29 8
+1 6
+6 5
+1 4
+2 6
+1 3
+7 8
+7 3
+1 4
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+12 tasks.Signal
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.09
+23 ITMO 2014-2015 train #1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

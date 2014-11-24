@@ -1,0 +1,29 @@
+8 Mandarin
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+1 4
+2 11
+1
+1
+4 1000
+-1
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+14 tasks.Mandarin
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.17
+12 gym#spbgu#21
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

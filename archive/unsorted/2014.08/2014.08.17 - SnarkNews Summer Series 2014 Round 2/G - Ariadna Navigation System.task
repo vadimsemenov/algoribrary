@@ -1,0 +1,32 @@
+29 G - Ariadna Navigation System
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+52 3
+ruldrdlu
+ddludrdurrdduurllluu
+dddddlllrrrrluuuuuu
+
+10 No
+Yes
+No
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.17
+36 SnarkNews Summer Series 2014 Round 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,30 @@
+10 PaperRoute
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+19 2
+1
+3
+4
+0 1 1
+0 2 2
+1 7
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+16 tasks.PaperRoute
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.18
+49 2011-2012 Waterloo Local Contest, 2 October, 2011
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

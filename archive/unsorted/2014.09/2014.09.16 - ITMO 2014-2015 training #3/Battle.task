@@ -1,0 +1,29 @@
+6 Battle
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+26 10
+8 100 101 1 1 1 2 5 6 7
+32 100 3
+4 4 5 6 7
+3 8 9 10
+3 1 2 3
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+12 tasks.Battle
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.16
+26 ITMO 2014-2015 training #3
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

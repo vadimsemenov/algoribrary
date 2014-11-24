@@ -1,0 +1,27 @@
+13 EuclidianTask
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+9 4 6
+17 17
+13 -1 1 2
+0 1 17
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+19 tasks.EuclidianTask
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.17
+12 gym#spbgu#21
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

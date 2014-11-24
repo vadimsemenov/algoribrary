@@ -1,0 +1,35 @@
+5 TaskB
+12 MULTI_NUMBER
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+2
+0
+22 3
+saeed
+mohammad
+shadi
+19 PESAR
+PESAR
+DOKHTAR
+1
+1
+12 1
+dmieblrlem
+7 DOKHTAR
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.09
+30 Bayan 2014 Qualification Round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

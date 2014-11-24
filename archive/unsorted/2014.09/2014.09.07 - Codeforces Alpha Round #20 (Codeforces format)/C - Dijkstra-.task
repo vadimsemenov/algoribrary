@@ -1,0 +1,43 @@
+13 C - Dijkstra?
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+40 5 6
+1 2 2
+2 5 5
+2 3 4
+1 4 1
+4 3 3
+3 5 1
+
+8 1 4 3 5 
+1
+1
+40 5 6
+1 2 2
+2 5 5
+2 3 4
+1 4 1
+4 3 3
+3 5 1
+
+8 1 4 3 5 
+1
+12 output/tasks
+7 -Xmx64M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.07
+46 Codeforces Alpha Round #20 (Codeforces format)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

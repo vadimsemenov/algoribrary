@@ -25,10 +25,10 @@ public class LongFenwickTree {
     }
 
     public long query(int from, int to) {
-        return query(to) - query(from - 1);
+        return internalQuery(to) - internalQuery(from - 1);
     }
 
-    private long query(int at) {
+    private long internalQuery(int at) {
         int start = at;
         long add = 0;
         long mul = 0;

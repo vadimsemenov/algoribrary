@@ -1,0 +1,46 @@
+17 F - Meta-universe
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+22 5
+0 0
+0 2
+2 0
+2 1
+2 2
+
+2 3
+
+1
+1
+34 8
+0 0
+1 0
+0 2
+0 3
+3 0
+3 1
+2 3
+3 3
+
+2 1
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.05
+26 Bayan 2015 Contest Warm Up
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

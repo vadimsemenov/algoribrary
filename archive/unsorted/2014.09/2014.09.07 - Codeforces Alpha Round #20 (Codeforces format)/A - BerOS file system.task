@@ -1,0 +1,35 @@
+21 A - BerOS file system
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+26 //usr///local//nginx/sbin
+
+22 /usr/local/nginx/sbin
+
+1
+1
+5 /////
+1 /
+1
+2
+8 /l/ll///
+5 /l/ll
+1
+12 output/tasks
+7 -Xmx64M
+4 Main
+11 tasks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.07
+46 Codeforces Alpha Round #20 (Codeforces format)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,28 @@
+33 1013 - K-based Numbers. Version 3
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+8 2
+10
+100
+3 90
+
+1
+12 output/tasks
+15 -Xmx64M -Xss64M
+4 Main
+14 tasks.Task1013
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.20
+8 Volume 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

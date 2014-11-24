@@ -23,17 +23,17 @@ public class Circle {
         return Math.PI * radius * radius;
     }
 
-    public Point[] intersect(Circle other) {
-        double distance = this.center.distanceTo(other.center);
-        if (comparator.compare(distance, this.radius + other.radius) > 0 ||
-                comparator.compare(distance + Math.min(this.radius, other.radius), Math.max(this.radius, other.radius)) < 0) {
+    public Point[] intersect(Circle that) {
+        double distance = this.center.distanceTo(that.center);
+        if (comparator.compare(distance, this.radius + that.radius) > 0 ||
+                comparator.compare(distance + Math.min(this.radius, that.radius), Math.max(this.radius, that.radius)) < 0) {
             return new Point[0];
         }
         if (comparator.compare(distance, 0) == 0) {
             return new Point[3];
         }
-        double d = ((this.radius * this.radius - other.radius * other.radius) / distance + distance) * .5;
-        Point temp = other.center.subtract(this.center);
+        double d = ((this.radius * this.radius - that.radius * that.radius) / distance + distance) * .5;
+        Point temp = that.center.subtract(this.center);
         Point base = temp.multiply(d / temp.abs()).add(this.center);
         double mul = this.radius * this.radius - d * d;
         if (comparator.compare(mul, 0) == 0) {
@@ -46,6 +46,7 @@ public class Circle {
 
     public void setComparator(DoubleComparator comparator) {
         this.comparator = comparator;
+        this.center.setComparator(comparator);
     }
 
     @Override

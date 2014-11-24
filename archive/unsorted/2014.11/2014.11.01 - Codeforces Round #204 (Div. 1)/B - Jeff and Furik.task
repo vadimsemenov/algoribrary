@@ -1,0 +1,35 @@
+18 B - Jeff and Furik
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+6 2
+1 2
+
+9 0.000000
+
+1
+1
+12 5
+3 5 2 4 1
+
+10 13.000000
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.01
+30 Codeforces Round #204 (Div. 1)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

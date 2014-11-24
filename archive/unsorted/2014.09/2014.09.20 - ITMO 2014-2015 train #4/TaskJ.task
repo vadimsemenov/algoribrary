@@ -1,0 +1,71 @@
+5 TaskJ
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+7
+0
+26 -2 0 0
+-1 0 0
+0 1 0
+0 2 0
+
+5 Valid
+1
+1
+99 1000000 1000000 1000000
+1000000 1000000 100000
+-1000000 -1000000 -1000000
+-1000000 -1000000 -100000
+7 Invalid
+1
+2
+23 0 0 1
+0 0 2
+0 0 3
+0 0 4
+7 Invalid
+1
+3
+23 0 0 1
+0 0 2
+0 1 2
+0 2 2
+5 Valid
+1
+4
+23 0 0 2
+0 0 3
+0 1 1
+0 2 1
+7 Invalid
+1
+5
+29 0 0 20
+0 0 30
+0 1 100
+0 2 100
+5 Valid
+1
+6
+23 0 0 2
+0 0 3
+0 1 0
+0 2 0
+7 Invalid
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.20
+23 ITMO 2014-2015 train #4
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

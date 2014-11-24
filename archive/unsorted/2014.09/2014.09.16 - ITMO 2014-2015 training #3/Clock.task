@@ -1,0 +1,29 @@
+5 Clock
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+4 0 30
+5 01:00
+1
+1
+4 0 31
+11 No solution
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.Clock
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.16
+26 ITMO 2014-2015 training #3
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

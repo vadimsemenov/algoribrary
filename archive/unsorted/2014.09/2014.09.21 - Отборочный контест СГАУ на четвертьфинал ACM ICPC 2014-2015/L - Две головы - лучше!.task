@@ -1,0 +1,41 @@
+37 L - Две головы - лучше!
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+70 11 2 6
+abracadabra
+12
+Q L
+Q R
+R
+Q L
+Q R
+S L R
+S R R
+Q L
+Q R
+R
+Q L
+Q R
+
+9 baabcddc
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskL
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.21
+95 Отборочный контест СГАУ на четвертьфинал ACM ICPC 2014-2015
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

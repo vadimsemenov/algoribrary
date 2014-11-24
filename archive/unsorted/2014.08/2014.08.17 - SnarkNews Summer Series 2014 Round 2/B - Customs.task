@@ -1,0 +1,32 @@
+11 B - Customs
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+23 5 5 3 4
+3B
+3A
+1E
+3E
+4B
+
+3 88
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.17
+36 SnarkNews Summer Series 2014 Round 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

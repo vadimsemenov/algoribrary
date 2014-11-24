@@ -1,0 +1,30 @@
+14 SimpleDivision
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+61 701 1059 1417 2312 0
+14 23 17 32 122 0
+14 -22 17 -31 -124 0
+0
+7 179
+3
+3
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+20 tasks.SimpleDivision
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.17
+12 gym#spbgu#21
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

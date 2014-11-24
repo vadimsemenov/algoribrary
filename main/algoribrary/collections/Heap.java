@@ -8,43 +8,35 @@ import java.util.Arrays;
  * Created by vadim on 23-03-2014.
  */
 public class Heap {
-    private static final int MAX_ELEMENT = Integer.MAX_VALUE - 10;
+    private static final int MAX_ELEMENT = Integer.MAX_VALUE - 1;
 
     private IntComparator comparator;
     private int[] elements;
     private int[] position;
     private int size;
 
-    public Heap() {
-        this(10);
-    }
-
-    public Heap(IntComparator comparator) {
-        this(10, comparator);
-    }
-
-    public Heap(int maxElement) {
-        this(maxElement, IntComparator.DEFAULT);
-    }
-
-    public Heap(int maxElement, IntComparator comparator) {
-        this(10, maxElement, comparator);
-    }
-
     public Heap(int capacity, int maxElement, IntComparator comparator) {
+        if (maxElement > MAX_ELEMENT) {
+            throw new IllegalArgumentException("maxElement must be less or equal " + MAX_ELEMENT);
+        }
         elements = new int[capacity];
-        position = new int[maxElement];
+        position = new int[maxElement + 1];
         this.comparator = comparator;
+        Arrays.fill(elements, -1);
         Arrays.fill(position, -1);
     }
 
     public void add(int element) {
-        ensureCapacity(size + 1);
-        ensureMaxElement(element);
+        if (element >= position.length) {
+            throw new IllegalArgumentException(element + " > " + (position.length - 1));
+        }
+        if (size == elements.length) {
+            throw new IndexOutOfBoundsException("tried to add new element in full heap");
+        }
         elements[size] = element;
         position[element] = size;
         size++;
-        siftUp(element);
+        siftUp(elements[size - 1]);
     }
 
     public int peek() {
@@ -54,18 +46,28 @@ public class Heap {
         return elements[0];
     }
 
-    public int extract() {
+    public int pop() {
         if (isEmpty()) {
             throw new IndexOutOfBoundsException();
         }
         int result = elements[0];
-        position[result] = -1;
         size--;
-        elements[0] = elements[size];
-        position[elements[0]] = 0;
-        siftDown(elements[0]);
+        swap(0, size);
+        position[elements[size]] = -1;
+        elements[size] = -1;
+        if (size > 0) {
+            siftDown(elements[0]);
+        }
         return result;
     }
+
+    public boolean contains(int element) {
+        if (element >= position.length) {
+            throw new IllegalArgumentException(element + " > " + (position.length - 1));
+        }
+        return position[element] != -1;
+    }
+
 
     public int size() {
         return size;
@@ -116,29 +118,5 @@ public class Heap {
         elements[second] = temp;
         position[elements[first]] = first;
         position[elements[second]] = second;
-    }
-
-    private void ensureCapacity(int capacity) {
-        if (elements.length < capacity) {
-            int[] oldElements = elements;
-            elements = new int[oldElements.length << 1];
-            System.arraycopy(oldElements, 0, elements, 0, size);
-        }
-    }
-
-    private void ensureMaxElement(int maxElement) {
-        if (maxElement >= position.length) {
-            int[] oldPosition = position;
-            int newMaxElement = maxElement + 1;
-            if (MAX_ELEMENT >> 1 > newMaxElement &&
-                    newMaxElement < oldPosition.length << 1) {
-                newMaxElement = oldPosition.length << 1;
-            } else if (newMaxElement > MAX_ELEMENT) {
-                throw new OutOfMemoryError();
-            }
-            position = new int[newMaxElement];
-            Arrays.fill(position, -1);
-            System.arraycopy(oldPosition, 0, position, 0, oldPosition.length);
-        }
     }
 }

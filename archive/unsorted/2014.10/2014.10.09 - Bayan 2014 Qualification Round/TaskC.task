@@ -1,0 +1,35 @@
+5 TaskC
+12 MULTI_NUMBER
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+85 2
+Front Up Down Left Right Back
+2
+Z 4
+X 4
+Front Up Down Left Right Back
+3
+Z 1
+X 1
+Y 1
+59 Front Up Down Left Right Back
+Down Back Front Right Left Up
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.09
+30 Bayan 2014 Qualification Round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

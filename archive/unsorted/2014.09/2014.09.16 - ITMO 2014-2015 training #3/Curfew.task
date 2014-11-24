@@ -1,0 +1,38 @@
+6 Curfew
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+3
+0
+9 3 1
+1 1 1
+1 2
+1
+1
+10 3 3
+1 1 1
+
+1 0
+1
+2
+7 1 10
+1
+
+2 -1
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+12 tasks.Curfew
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.16
+26 ITMO 2014-2015 training #3
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

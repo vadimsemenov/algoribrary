@@ -1,0 +1,25 @@
+12 TestDijkstra
+6 SINGLE
+6 CUSTOM
+5 C.txt
+6 CUSTOM
+5 c.out
+1
+0
+1 0
+-1
+1
+12 output/tasks
+9 -Xmx1024M
+4 Main
+18 tasks.TestDijkstra
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.22
+22 Bayan Elimination 2014
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1
