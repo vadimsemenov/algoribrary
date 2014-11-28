@@ -17,5 +17,4 @@ public interface Edge {
     public int flow();
 
     public int reversed();
-
 }

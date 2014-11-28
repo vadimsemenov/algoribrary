@@ -1,7 +1,7 @@
 package tasks;
 
 import algoribrary.graph.Graph;
-import algoribrary.graph.MaxFlow;
+import algoribrary.graph.Flow;
 import algoribrary.io.InputReader;
 
 import java.io.PrintWriter;
@@ -16,7 +16,7 @@ public class TaskE {
         }
         int source = 0;
         int sink = vertices - 1;
-        long maxFlow = MaxFlow.dinic(graph, source, sink);
+        long maxFlow = Flow.dinic(graph, source, sink);
         StringBuilder result = new StringBuilder();
         int ways = 0;
         int[] nextEdge = new int[vertices];

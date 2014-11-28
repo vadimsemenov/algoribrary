@@ -5,26 +5,36 @@ import java.util.Arrays;
 /**
  * Created by vadim on 21/11/14.
  */
-public class MaxFlow {
+public class Flow {
     private Graph graph;
     private int source;
     private int sink;
 
     private int[] queue;
     private int[] nextEdge;
-    private int[] distance;
+    private int[] level;
 
-    private MaxFlow(Graph graph, int source, int sink) {
+    private Flow(Graph graph, int source, int sink) {
         this.graph = graph;
         this.source = source;
         this.sink = sink;
         queue = new int[graph.verticesCounter];
         nextEdge = new int[graph.verticesCounter];
-        distance = new int[graph.verticesCounter];
+        level = new int[graph.verticesCounter];
     }
 
     public static long dinic(Graph graph, int source, int sink) {
-        return new MaxFlow(graph, source, sink).dinic();
+        return new Flow(graph, source, sink).dinic();
+    }
+
+    public static boolean[] getMinCut(Graph graph, int source, int sink) {
+        Flow flow = new Flow(graph, source, sink);
+        flow.dinic();
+        boolean[] cut = new boolean[graph.verticesCounter];
+        for (int i = 0; i < graph.verticesCounter; ++i) {
+            cut[i] = flow.level[i] != -1;
+        }
+        return cut;
     }
 
     private long dinic() {
@@ -48,14 +58,14 @@ public class MaxFlow {
         if (vertex == sink) {
             return minCapacity;
         }
-        if (distance[vertex] >= distance[sink]) {
+        if (level[vertex] >= level[sink]) {
             return 0;
         }
         int currentEdge = nextEdge[vertex];
         long pushed = 0;
         while (currentEdge != -1) {
             int next = graph.end[currentEdge];
-            if (distance[next] == distance[vertex] + 1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
+            if (level[next] == level[vertex] + 1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
                 pushed = dfs(next, Math.min(minCapacity, graph.capacities[currentEdge] - graph.flows[currentEdge]));
                 if (pushed != 0) {
                     graph.pushFlow(currentEdge, pushed);
@@ -69,8 +79,8 @@ public class MaxFlow {
     }
 
     private boolean bfs() {
-        Arrays.fill(distance, -1);
-        distance[source] = 0;
+        Arrays.fill(level, -1);
+        level[source] = 0;
         int head = 0;
         int tail = 0;
         queue[tail++] = source;
@@ -79,13 +89,13 @@ public class MaxFlow {
             int currentEdge = graph.firstOutgoing[current];
             while (currentEdge != -1) {
                 int next = graph.end[currentEdge];
-                if (distance[next] == -1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
+                if (level[next] == -1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
                     queue[tail++] = next;
-                    distance[next] = distance[current] + 1;
+                    level[next] = level[current] + 1;
                 }
                 currentEdge = graph.nextOutgoing[currentEdge];
             }
         }
-        return distance[sink] != -1;
+        return level[sink] != -1;
     }
 }
