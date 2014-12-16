@@ -108,6 +108,7 @@ public class Graph {
         begin[id] = beginID;
         end[id] = endID;
         capacities[id] = capacity;
+        flows[id] = 0;
         reversedEdge[id] = addFlowEdge(endID, beginID, 0, id);
         nextOutgoing[id] = firstOutgoing[beginID];
         firstOutgoing[beginID] = id;
@@ -121,6 +122,7 @@ public class Graph {
         begin[id] = beginID;
         end[id] = endID;
         capacities[id] = capacity;
+        flows[id] = 0;
         reversedEdge[id] = reversedID;
         nextOutgoing[id] = firstOutgoing[beginID];
         firstOutgoing[beginID] = id;
@@ -141,6 +143,23 @@ public class Graph {
 
     public int addFlowWeightedEdge(int beginID, int endID, long capacity, long weight, int reversedID) {
         throw new UnsupportedOperationException();
+    }
+
+    public int begin(int edgeID) {
+        return begin[edgeID];
+    }
+
+    public int end(int edgeID) {
+        return end[edgeID];
+    }
+
+    public int nextOutgoing(int edgeID) {
+        return nextOutgoing[edgeID];
+    }
+
+    public int nextIncomming(int edgeID) {
+        initializeIncoming();
+        return nextIncoming[edgeID];
     }
 
     public void pushFlow(int edgeID, long pushed) {
@@ -200,10 +219,12 @@ public class Graph {
 
     private void ensureCapacity(int capacity) {
         if (begin.length < capacity) {
+            int oldSize = begin.length;
             int newSize = Math.max(capacity, 2 * begin.length);
             begin = ArrayUtils.resize(begin, newSize);
-            end = ArrayUtils.resize(begin, newSize);
+            end = ArrayUtils.resize(end, newSize);
             nextOutgoing = ArrayUtils.resize(nextOutgoing, newSize);
+            Arrays.fill(nextOutgoing, oldSize, nextOutgoing.length, -1);
             if (nextIncoming != null) {
                 nextIncoming = ArrayUtils.resize(nextIncoming, newSize);
             }

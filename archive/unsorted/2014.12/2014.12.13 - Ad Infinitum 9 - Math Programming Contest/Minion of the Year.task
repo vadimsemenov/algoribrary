@@ -1,0 +1,50 @@
+18 Minion of the Year
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+67 2
+7 2
+1 1 1 5
+7 8 8 7
+11 5
+1 1 1 1
+0 1 2 3
+3 2 1 0
+9 8 7 6
+0 0 1 1
+
+21 7
+wala
+2
+1
+wala
+33
+0
+
+1
+1
+58 1
+16769023 3
+123 321 14 12123 
+123 321 14 11
+123 321 14 13
+-1
+1
+12 output/tasks
+8 -Xmx256M
+8 Solution
+21 tasks.MinionOfTheYear
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.13
+41 Ad Infinitum 9 - Math Programming Contest
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

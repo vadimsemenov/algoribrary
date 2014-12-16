@@ -1,0 +1,38 @@
+13 Fibonacci GCD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+2
+3
+5
+
+2 1
+
+1
+1
+6 2
+3
+6
+
+2 2
+
+1
+12 output/tasks
+8 -Xmx256M
+8 Solution
+18 tasks.FibonacciGCD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.13
+41 Ad Infinitum 9 - Math Programming Contest
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

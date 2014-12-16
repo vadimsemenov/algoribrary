@@ -85,13 +85,13 @@ public class Flow {
         int tail = 0;
         queue[tail++] = source;
         while (head < tail) {
-            int current = queue[head++];
-            int currentEdge = graph.firstOutgoing[current];
+            int currentVertex = queue[head++];
+            int currentEdge = graph.firstOutgoing[currentVertex];
             while (currentEdge != -1) {
-                int next = graph.end[currentEdge];
-                if (level[next] == -1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
-                    queue[tail++] = next;
-                    level[next] = level[current] + 1;
+                int nextVertex = graph.end[currentEdge];
+                if (level[nextVertex] == -1 && graph.capacities[currentEdge] > graph.flows[currentEdge]) {
+                    queue[tail++] = nextVertex;
+                    level[nextVertex] = level[currentVertex] + 1;
                 }
                 currentEdge = graph.nextOutgoing[currentEdge];
             }
