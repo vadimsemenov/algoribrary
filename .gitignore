@@ -1,0 +1,7 @@
+.*
+!.gitignore
+*.iml
+chelper.properties
+CHelperReport.txt
+output/
+out/
