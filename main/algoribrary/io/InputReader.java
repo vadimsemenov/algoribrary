@@ -53,11 +53,11 @@ public class InputReader {
     }
 
     public String readLine() {
-        String line = null;
+        String line;
         try {
             line = reader.readLine();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
         return line;
     }

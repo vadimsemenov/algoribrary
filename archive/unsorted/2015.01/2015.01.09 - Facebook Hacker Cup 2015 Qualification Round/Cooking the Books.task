@@ -1,0 +1,45 @@
+17 Cooking the Books
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+27 cooking.*the.*books.*[.]txt
+6 CUSTOM
+19 cookingthebooks.out
+2
+0
+21 5
+31524
+897
+123
+10
+5
+
+83 Case #1: 13524 51324
+Case #2: 798 987
+Case #3: 123 321
+Case #4: 10 10
+Case #5: 5 5
+
+1
+1
+41 5
+0
+999999999
+500550505
+7098079
+123456709
+-1
+1
+12 output/tasks
+9 -Xmx1024M
+4 Main
+21 tasks.CookingTheBooks
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.09
+44 Facebook Hacker Cup 2015 Qualification Round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

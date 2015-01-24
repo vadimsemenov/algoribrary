@@ -1,0 +1,51 @@
+17 Corporate Gifting
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+26 corporate.*gifting.*[.]txt
+6 CUSTOM
+20 corporategifting.txt
+2
+0
+78 5
+3
+0 1 1
+8
+0 1 1 2 2 3 3 3
+5
+0 1 2 3 4
+9
+0 1 2 3 4 5 5 5 5
+8
+0 1 1 1 1 2 2 2
+
+58 Case #1: 4
+Case #2: 10
+Case #3: 7
+Case #4: 12
+Case #5: 11
+
+1
+1
+70 3
+1
+0
+8
+0 1 1 2 2 3 3 4
+21
+0 1 1 1 2 2 2 3 3 3 5 5 5 6 6 8 8 9 9 10 10
+-1
+1
+12 output/tasks
+13 -Xmx1024M -ea
+4 Main
+22 tasks.CorporateGifting
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.18
+32 Facebook Hacker Cup 2015 Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

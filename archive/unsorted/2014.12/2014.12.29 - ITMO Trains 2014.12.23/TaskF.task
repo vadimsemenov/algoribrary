@@ -1,0 +1,30 @@
+5 TaskF
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+53 3 4
+3 3 1
+1 0 2 3 10
+2 1 1 2 10
+1 2 3 1 10
+3 1 1 3 10
+2 40
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.29
+22 ITMO Trains 2014.12.23
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1
