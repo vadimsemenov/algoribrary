@@ -1,0 +1,99 @@
+package %package%;
+
+import %InputClassFQN%;
+
+import %OutputClassFQN%;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+// TODO: Javadoc
+public class %TaskClass% {
+    // BE SURE YOU INSTALLED *EXACT* NUMBER OF TESTS!
+    private static final int EXPECTED_TEST_NUMBER = 1;
+
+    private static class TestSolver implements Callable<TestSolver> {
+        private final int testNumber;
+        private String output;
+
+        private void solve() {
+            output = "";
+        }
+
+        public void readInput(final InputReader in) {
+        }
+
+        public void printOutput(final PrintWriter out) {
+            out.println("Case #" + testNumber + ": " + output);
+        }
+
+        @Override
+        public TestSolver call() {
+            System.err.println("In process testcase #" + testNumber);
+            solve();
+            System.err.println("Done testcase #" + testNumber);
+            return this;
+        }
+
+        public TestSolver(final int testNumber) {
+            this.testNumber = testNumber;
+        }
+    }
+
+    public void solve(final int testNumber, final %InputClass% in, final %OutputClass% out) {
+        Executor.initialize(in, out);
+        TestSolver solver = new TestSolver(testNumber);
+        Executor.submit(solver);
+        if (testNumber == EXPECTED_TEST_NUMBER) {
+            Executor.shutdown();
+        }
+    }
+
+    private static class Executor {
+        // TODO: create benchmark with different constants
+        public static final int THREADS_NUMBER = 4;
+
+        private static final long START_TIME = System.currentTimeMillis();
+
+        private static boolean INITIALIZED = false;
+        private static InputReader in;
+        private static PrintWriter out;
+
+        private static final ExecutorService pool = Executors.newFixedThreadPool(THREADS_NUMBER);
+        private static List<Future<TestSolver>> tasks;
+
+        public static void initialize(final InputReader in, final PrintWriter out) {
+            if (INITIALIZED) return;
+            Executor.in = in;
+            Executor.out = out;
+            tasks = new ArrayList<>(EXPECTED_TEST_NUMBER);
+            INITIALIZED = true;
+        }
+
+        public static void submit(final TestSolver solver) {
+            solver.readInput(in);
+            tasks.add(pool.submit(solver));
+        }
+
+        public static void shutdown() {
+            pool.shutdown();
+            in = null;
+            System.err.println("Began writing outputs");
+            for (Future<TestSolver> solution : tasks) {
+                try {
+                    TestSolver solver = solution.get();
+                    solver.printOutput(out);
+                } catch (InterruptedException | ExecutionException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            out = null;
+            System.err.println("Done in " + (System.currentTimeMillis() - START_TIME) + ".ms");
+        }
+    }
+}
+
