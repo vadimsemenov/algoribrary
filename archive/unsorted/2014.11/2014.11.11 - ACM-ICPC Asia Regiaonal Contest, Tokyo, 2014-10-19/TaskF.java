@@ -115,19 +115,19 @@ public class TaskF {
         for (int i = 0; i < vertices; ++i) {
             newGraph[i] = new ArrayList<>();
         }
-        for (int e = 0; e < edges; ++e) if (good[e]) {
+        for (int e = 0; e < next; ++e) if (good[e]) {
             newGraph[from[e]].add(e);
             newGraph[to[e]].add(e);
         }
 
         int[] timeIn = new int[vertices];
         int[] minAvailable = new int[vertices];
-        boolean[] isBridge = new boolean[edges];
+        boolean[] isBridge = new boolean[next];
         currentTime = 1;
         dfs(0, -1, newGraph, from, to, timeIn, minAvailable, isBridge);
         int cnt = 0;
         int sum = 0;
-        for (int e = 0; e < edges; ++e) if (isBridge[e]) {
+        for (int e = 0; e < next; ++e) if (isBridge[e]) {
             cnt++;
             sum += weight[e];
         }

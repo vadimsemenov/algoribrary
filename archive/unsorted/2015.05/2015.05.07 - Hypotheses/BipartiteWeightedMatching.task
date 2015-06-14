@@ -1,0 +1,25 @@
+25 BipartiteWeightedMatching
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+0 
+-1
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+31 tasks.BipartiteWeightedMatching
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.07
+10 Hypotheses
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,30 @@
+8 ANKINTER
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+27 2
+3 1
+2 3 1
+6 3
+6 1 5 3 4 2
+3 5
+5
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+14 tasks.ANKINTER
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.07
+34 CodeChef Snackdown 2015 : Round 1C
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

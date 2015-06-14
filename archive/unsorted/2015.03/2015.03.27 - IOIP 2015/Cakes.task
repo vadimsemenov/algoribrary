@@ -1,0 +1,50 @@
+5 Cakes
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+3
+0
+16 3 10
+1 4
+2 5
+3 3
+2 2
+
+1
+1
+16 3 10
+1 2
+2 2
+3 3
+2 3
+
+1
+2
+44 8 100
+1 21
+3 10
+4 3
+5 19
+8 8
+9 32
+50 1
+100 1
+2 5
+
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.Cakes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.27
+9 IOIP 2015
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,65 @@
+5 TaskD
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+5
+0
+23 5
+7 3
+8 3
+11 3
+15 2
+3 1
+27 2871
+12132
+922780
+602070
+4
+
+0
+1
+28 1
+1497281 100000000000000099
+10 128421664
+
+0
+2
+6 1 
+1 1
+1 1
+0
+3
+29 5
+1 2 
+1 1
+2 2
+2 10000000
+3 2
+10 1
+1
+2
+2
+6
+
+0
+4
+41 1
+6723810479506575607 8951403739315253998
+9 934853157
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.22
+16 RCC 2015 round 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

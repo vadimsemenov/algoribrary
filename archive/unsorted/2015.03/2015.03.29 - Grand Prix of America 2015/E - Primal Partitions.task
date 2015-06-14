@@ -1,0 +1,35 @@
+21 E - Primal Partitions
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+15 5 3
+10 5 4 8 3
+
+2 2
+
+1
+1
+19 5 3
+10 11 12 13 14
+
+2 0
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.29
+26 Grand Prix of America 2015
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

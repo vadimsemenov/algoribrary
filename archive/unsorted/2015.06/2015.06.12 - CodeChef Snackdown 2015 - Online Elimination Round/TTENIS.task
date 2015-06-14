@@ -1,0 +1,29 @@
+6 TTENIS
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+30 2
+0101111111111
+11100000000000
+9 WIN
+LOSE
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+12 tasks.TTENIS
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.12
+50 CodeChef Snackdown 2015 : Online Elimination Round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

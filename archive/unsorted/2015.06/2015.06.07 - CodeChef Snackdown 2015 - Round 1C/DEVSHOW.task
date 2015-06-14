@@ -1,0 +1,37 @@
+7 DEVSHOW
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 2
+3
+2
+3
+5
+2 1 1
+4 5 2
+
+25 none
+3 1
+2 1
+both
+3 5
+2 4
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+13 tasks.DEVSHOW
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.07
+34 CodeChef Snackdown 2015 : Round 1C
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

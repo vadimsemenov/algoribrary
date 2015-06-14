@@ -1,0 +1,39 @@
+39 C - Упрощённая Косынка
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 1 1
+
+2 1
+
+1
+1
+4 3 2
+
+2 4
+
+1
+2
+4 5 2
+
+3 26
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.24
+29 Yandex.Algorithm.2015 Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

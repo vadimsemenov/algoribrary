@@ -1,0 +1,29 @@
+18 D - Drum Decorator
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 D-(small|large).*[.]in
+6 CUSTOM
+5 d.out
+1
+0
+10 2
+2 4
+3 5
+
+21 Case #1: 1
+Case #2: 2
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.30
+28 Google Code Jam Round 2 2015
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

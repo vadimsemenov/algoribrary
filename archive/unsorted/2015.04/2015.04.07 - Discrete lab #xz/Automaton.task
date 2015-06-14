@@ -1,0 +1,60 @@
+9 Automaton
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+7
+0
+5 ababb
+65 7 9
+1 2 a
+1 7 b
+2 3 b
+3 4 a
+3 6 b
+4 5 b
+5 6 b
+7 4 a
+7 6 b
+3
+6 7 1
+1
+1
+6 aaaaaa
+-1
+1
+2
+6 abbbbb
+-1
+1
+3
+13 abbbbbbbbbbbc
+-1
+1
+4
+7 abacaba
+-1
+1
+5
+1 a
+-1
+1
+6
+3 foo
+-1
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+15 tasks.Automaton
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.07
+16 Discrete lab #xz
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1
