@@ -1,0 +1,42 @@
+33 D - Социальная сеть
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+43 4 2 10
+17:05:53
+17:05:58
+17:06:01
+22:39:47
+
+10 3
+1
+2
+2
+3
+
+1
+1
+19 1 2 86400
+00:00:00
+
+12 No solution
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.23
+26 VK Cup 2015 - Раунд 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1
