@@ -171,8 +171,12 @@ public class Graph {
         return weights[edgeID];
     }
 
-    public long capacity(int edgeID) {
+    public long residualCapacity(int edgeID) {
         return capacities[edgeID] - flows[edgeID];
+    }
+
+    public long initialCapacity(int edgeID) {
+        return capacities[edgeID];
     }
 
     public long flow(int edgeID) {

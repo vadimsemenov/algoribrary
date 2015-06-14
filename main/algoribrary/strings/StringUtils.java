@@ -57,7 +57,7 @@ public class StringUtils {
             for (int i : string) {
                 alphabet = Math.max(alphabet, i);
             }
-            position = new int[Math.max(length, alphabet)];
+            position = new int[Math.max(length, alphabet) + 1];
             for (int ch : string) {
                 position[ch]++;
             }
@@ -120,5 +120,29 @@ public class StringUtils {
 
     public static int[] buildSuffixArray(final String string) {
         return buildSuffixArray(string.toCharArray());
+    }
+
+    public static int[] buildLCP(final int[] string, final int[] suffixArray) {
+        final int length = string.length;
+        final int[] position = new int[length];
+        for (int i = 0; i < length; ++i) {
+            position[suffixArray[i]] = i;
+        }
+        final int[] lcp = new int[length]; // with fake lcp[length - 1]
+        int LCP = 0;
+        for (int current = 0; current < length; ++current) {
+            LCP = Math.max(LCP - 1, 0);
+            int next = position[current] + 1;
+            if (next >= length) {
+                continue;
+            }
+            next = suffixArray[next];
+            while (Math.max(next, current) + LCP < length &&
+                    string[current + LCP] == string[next + LCP]) {
+                LCP++;
+            }
+            lcp[position[current]] = LCP;
+        }
+        return lcp;
     }
 }
