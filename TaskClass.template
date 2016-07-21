@@ -3,7 +3,7 @@ package %package%;
 import %InputClassFQN%;
 import %OutputClassFQN%;
 
-public class %TaskClass% {
-    public void solve(final int testNumber, final %InputClass% in, final %OutputClass% out) {
+public final class %TaskClass% {
+    public void solve(int __, %InputClass% in, %OutputClass% out) {
     }
 }
