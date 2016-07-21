@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by vadim on 27/11/14.
+ * @author Vadim Semenov (semenov@rain.ifmo.ru)
  */
 public class ArrayUtils {
     private static final Random RANDOM = ThreadLocalRandom.current();
@@ -21,6 +21,7 @@ public class ArrayUtils {
             --idx;
         }
         if (idx < 0) {
+            Arrays.sort(permutation);
             return false;
         }
         int toSwap = idx + 1;
@@ -41,6 +42,7 @@ public class ArrayUtils {
             --idx;
         }
         if (idx < 0) {
+            Arrays.sort(permutation);
             return false;
         }
         int toSwap = idx + 1;
@@ -61,6 +63,7 @@ public class ArrayUtils {
             --idx;
         }
         if (idx < 0) {
+            Arrays.sort(permutation);
             return false;
         }
         int toSwap = idx + 1;
@@ -82,6 +85,7 @@ public class ArrayUtils {
             --idx;
         }
         if (idx < 0) {
+            Arrays.sort(permutation, comparator);
             return false;
         }
         int toSwap = idx + 1;
