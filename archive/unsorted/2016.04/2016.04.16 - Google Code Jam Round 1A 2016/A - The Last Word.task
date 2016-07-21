@@ -1,0 +1,39 @@
+17 A - The Last Word
+6 SINGLE
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+51 7
+CAB
+JAM
+CODE
+ABAAB
+CABCBBABC
+ABCABCABC
+ZXCASDQWE
+
+111 Case #1: CAB
+Case #2: MJA
+Case #3: OCDE
+Case #4: BBAAA
+Case #5: CCCABBBAB
+Case #6: CCCBAABAB
+Case #7: ZXCASDQWE
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.16
+29 Google Code Jam Round 1A 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

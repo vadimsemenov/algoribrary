@@ -1,0 +1,45 @@
+5 TaskI
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+6
+0
+1 4
+1 8
+1
+1
+1 6
+2 13
+1
+2
+1 7
+1 2
+1
+3
+2 22
+1 4
+1
+4
+19 2000000000000000000
+-1
+1
+5
+19 2000000000000000000
+-1
+1
+12 output/tasks
+14 -Xmx2G -Xss64m
+4 Main
+11 tasks.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.22
+0 
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

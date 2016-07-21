@@ -1,0 +1,35 @@
+13 D - Fractiles
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 D-(small|large).*[.]in
+6 CUSTOM
+5 d.out
+1
+0
+32 5
+2 3 2
+1 1 1
+2 1 1
+2 1 2
+3 2 3
+
+67 Case #1: 2
+Case #2: 1
+Case #3: IMPOSSIBLE
+Case #4: 1 2
+Case #5: 2 6
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.09
+40 Google Code Jam Qualification Round 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

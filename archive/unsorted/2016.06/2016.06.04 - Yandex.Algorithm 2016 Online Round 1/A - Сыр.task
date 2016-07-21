@@ -1,0 +1,39 @@
+10 A - Сыр
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+6 1 1 1
+
+2 2
+
+1
+1
+6 2 2 1
+
+2 3
+
+1
+2
+7 1 10 2
+
+3 -1
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.04
+36 Yandex.Algorithm 2016 Online Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

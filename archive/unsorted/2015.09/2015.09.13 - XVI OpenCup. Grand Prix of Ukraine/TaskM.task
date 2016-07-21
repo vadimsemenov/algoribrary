@@ -1,0 +1,29 @@
+5 TaskM
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+53 3
+0 0 0 0 1 2 0 0
+0 0 0 0 0 0 10 6
+0 0 0 0 0 0 25 1
+9
+2 51
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskM
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.13
+34 XVI OpenCup. Grand Prix of Ukraine
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

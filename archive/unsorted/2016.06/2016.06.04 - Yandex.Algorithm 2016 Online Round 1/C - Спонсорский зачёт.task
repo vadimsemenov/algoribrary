@@ -1,0 +1,31 @@
+37 C - Спонсорский зачёт
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 0 0 0 0 0 0 0 0 0 0
+
+3 10
+
+1
+1
+50 -100 -100 -100 -100 -100 -100 -100 -100 -100 -100 
+4 1000
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.04
+36 Yandex.Algorithm 2016 Online Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

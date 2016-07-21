@@ -1,0 +1,21 @@
+8 Testtter
+6 SINGLE
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+0
+12 output/tasks
+8 -Xmx512M
+4 Main
+14 tasks.Testtter
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.16
+40 Google Code Jam Qualification Round 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

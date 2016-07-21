@@ -1,0 +1,39 @@
+17 E - A Simple Task
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+48 10 5
+abacdabcda
+7 10 0
+5 8 1
+1 4 0
+3 6 0
+7 10 1
+
+10 cbcaaaabdd
+1
+1
+23 10 1
+agjucbvdfk
+1 10 1
+
+10 abcdfgjkuv
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.14
+30 Codeforces Round #312 (Div. 2)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

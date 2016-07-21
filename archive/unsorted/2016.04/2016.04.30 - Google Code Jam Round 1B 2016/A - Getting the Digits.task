@@ -1,0 +1,33 @@
+22 A - Getting the Digits
+6 SINGLE
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+46 4
+OZONETOWER
+WEIGHFOXTOURIST
+OURNEONFOE
+ETHER
+
+50 Case #1: 012
+Case #2: 2468
+Case #3: 114
+Case #4: 3
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.30
+29 Google Code Jam Round 1B 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

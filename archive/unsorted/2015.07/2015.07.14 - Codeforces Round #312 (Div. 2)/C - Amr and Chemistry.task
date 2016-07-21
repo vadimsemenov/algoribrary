@@ -1,0 +1,33 @@
+21 C - Amr and Chemistry
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 3
+4 8 2
+
+1 2
+1
+1
+8 3
+3 5 6
+
+1 5
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.14
+30 Codeforces Round #312 (Div. 2)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

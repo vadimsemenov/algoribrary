@@ -1,0 +1,29 @@
+4 I18n
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+94 internationalization bla bla bla abcd acbd bcda abcd internationalization internationalization
+62 internationalization bla bla bla abcd acbd bcda abcd i18n i18n
+1
+1
+22 a bb ccc dddd ccc bb a
+22 a bb ccc dddd ccc bb a
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+10 tasks.I18n
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.11.29
+17 AIMContest Replay
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

@@ -1,0 +1,37 @@
+8 C - BFFs
+6 SINGLE
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+57 4
+4
+2 3 4 1
+4
+3 3 4 1
+4
+3 3 4 3
+10
+7 8 10 10 9 2 9 6 3 3
+
+43 Case #1: 4
+Case #2: 3
+Case #3: 3
+Case #4: 6
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.16
+29 Google Code Jam Round 1A 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

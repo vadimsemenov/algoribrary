@@ -1,0 +1,27 @@
+9 Cylinders
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+12 4
+0 2 5 15
+9
+1 5
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+15 tasks.Cylinders
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.17
+47 MIPT Training camp Final contest 2 (19.11.2012)
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+0

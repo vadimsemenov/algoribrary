@@ -1,0 +1,39 @@
+16 C - Technobabble
+6 SINGLE
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+140 3
+3
+HYDROCARBON COMBUSTION
+QUAIL BEHAVIOR
+QUAIL COMBUSTION
+3
+CODE JAM
+SPACE JAM
+PEARL JAM
+2
+INTERGALACTIC PLANETARY
+PLANETARY INTERGALACTIC
+
+32 Case #1: 1
+Case #2: 0
+Case #3: 0
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.30
+29 Google Code Jam Round 1B 2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

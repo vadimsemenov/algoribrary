@@ -1,0 +1,47 @@
+7 Queries
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+34 5 5
+10 100 23 1 60
+?
+0?1
+70?
+6?
+00
+12 42
+21
+0
+11
+5
+1
+1
+48 10 4
+1 2 3 66 10 20 34 48 50 103
+2?1
+0?1
+???
+??0
+11 0
+37
+347
+41
+1
+12 output/tasks
+20 -Xmx256m -Xss64m -ea
+4 Main
+13 tasks.Queries
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.23
+15 IOIP 23.01.2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

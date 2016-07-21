@@ -1,0 +1,32 @@
+48 B - Путешествие по квадрату
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 32?
+?1?
+???
+
+13 329
+418
+567
+
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.04
+36 Yandex.Algorithm 2016 Online Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

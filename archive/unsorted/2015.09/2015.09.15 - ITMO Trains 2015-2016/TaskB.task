@@ -1,0 +1,53 @@
+5 TaskB
+6 SINGLE
+6 CUSTOM
+8 nasty.in
+6 CUSTOM
+9 nasty.out
+3
+0
+25 15 4
+2 x * 123A +
+1
+2
+3
+4
+7 C
+E
+1
+3
+1
+1
+22 36 3
+x 1 +
+10
+100
+1000
+5 1
+1
+1
+1
+2
+25 36 3
+x 100X +
+10
+101
+1002
+5 X
+Y
+Z
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.15
+21 ITMO Trains 2015-2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

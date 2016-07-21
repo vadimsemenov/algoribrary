@@ -1,0 +1,36 @@
+14 Carnival Coins
+6 SINGLE
+12 LOCAL_REGEXP
+23 carnival.*coins.*[.]txt
+6 CUSTOM
+17 carnivalcoins.out
+1
+0
+56 5
+2 1 0.5
+10 5 0.9
+10 5 0.1
+3000 50 0.123
+3000 50 0.987
+
+106 Case #1: 1.000000000
+Case #2: 1.180980000
+Case #3: 0.001634937
+Case #4: 5.712907306
+Case #5: 56.182751225
+
+1
+12 output/tasks
+9 -Xmx1024M
+4 Main
+19 tasks.CarnivalCoins
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2016.01.23
+32 Facebook Hacker Cup 2016 Round 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+1
+1

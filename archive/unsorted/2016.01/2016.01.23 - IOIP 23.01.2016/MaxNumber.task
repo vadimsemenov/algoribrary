@@ -1,0 +1,31 @@
+9 MaxNumber
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+7 3
+3 3 6
+2 12
+1
+1
+15 7
+1 2 2 2 2 4 4
+2 16
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+15 tasks.MaxNumber
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.23
+15 IOIP 23.01.2016
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1
