@@ -1,99 +1,64 @@
 package %package%;
 
 import %InputClassFQN%;
-
 import %OutputClassFQN%;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
-// TODO: Javadoc
 public class %TaskClass% {
-    // BE SURE YOU INSTALLED *EXACT* NUMBER OF TESTS!
-    private static final int EXPECTED_TEST_NUMBER = 1;
-
-    private static class TestSolver implements Callable<TestSolver> {
-        private final int testNumber;
-        private String output;
-
-        private void solve() {
+    private static class CaseSolver implements Callable<CaseSolver> {
+        void solve() {
             output = "";
         }
 
-        public void readInput(final %InputClassFQN% in) {
+        void readInput(%InputClass% in) {
         }
 
-        public void printOutput(final %OutputClassFQN% out) {
+        void printOutput(%OutputClass% out) {
             out.println("Case #" + testNumber + ": " + output);
         }
 
         @Override
-        public TestSolver call() {
+        public CaseSolver call() {
             System.err.println("In process testcase #" + testNumber);
             solve();
-            System.err.println("Done testcase #" + testNumber);
+            System.err.println("Done testcase #" + testNumber + " (" + output + ")");
             return this;
         }
 
-        public TestSolver(final int testNumber) {
+        CaseSolver(final int testNumber) {
             this.testNumber = testNumber;
         }
+
+        private final int testNumber;
+        private String output;
     }
 
-    public void solve(final int testNumber, final %InputClass% in, final %OutputClass% out) {
-        Executor.initialize(in, out);
-        TestSolver solver = new TestSolver(testNumber);
-        Executor.submit(solver);
-        if (testNumber == EXPECTED_TEST_NUMBER) {
-            Executor.shutdown();
-        }
-    }
-
-    private static class Executor {
-        // TODO: create benchmark with different constants
-        public static final int THREADS_NUMBER = 4;
-
-        private static final long START_TIME = System.currentTimeMillis();
-
-        private static boolean INITIALIZED = false;
-        private static %InputClassFQN% in;
-        private static %OutputClassFQN% out;
-
-        private static final ExecutorService pool = Executors.newFixedThreadPool(THREADS_NUMBER);
-        private static List<Future<TestSolver>> tasks;
-
-        public static void initialize(final %InputClassFQN% in, final %OutputClassFQN% out) {
-            if (INITIALIZED) return;
-            Executor.in = in;
-            Executor.out = out;
-            tasks = new ArrayList<>(EXPECTED_TEST_NUMBER);
-            INITIALIZED = true;
-        }
-
-        public static void submit(final TestSolver solver) {
+    public void solve(int useless, %InputClass% in, %OutputClass% out) {
+        final long startTime = System.nanoTime();
+        ExecutorService pool = Executors.newFixedThreadPool(THREADS_QTY);
+        int tests = in.nextInt();
+        List<Future<CaseSolver>> futures = new ArrayList<>(tests);
+        for (int testCase = 1; testCase <= tests; ++testCase) {
+            CaseSolver solver = new CaseSolver(testCase);
             solver.readInput(in);
-            tasks.add(pool.submit(solver));
+            futures.add(pool.submit(solver));
         }
-
-        public static void shutdown() {
-            pool.shutdown();
-            in = null;
-            System.err.println("Began writing outputs");
-            for (Future<TestSolver> solution : tasks) {
-                try {
-                    TestSolver solver = solution.get();
-                    solver.printOutput(out);
-                } catch (InterruptedException | ExecutionException e) {
-                    throw new RuntimeException(e);
-                }
+        pool.shutdown();
+        for (Future<CaseSolver> future : futures) {
+            CaseSolver solver;
+            try {
+                solver = future.get();
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+                continue;
             }
-            out = null;
-            System.err.println("Done in " + (System.currentTimeMillis() - START_TIME) + ".ms");
+            solver.printOutput(out);
         }
+        final long finishTime = System.nanoTime();
+        System.err.println("Complete in " + (finishTime - startTime) / 1_000_000_000. + "s");
     }
-}
 
+    private static final int THREADS_QTY = 4;
+}
