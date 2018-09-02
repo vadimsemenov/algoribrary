@@ -40,9 +40,7 @@ public class Flow {
     private long dinic() {
         long totalPushed = 0;
         while (bfs()) {
-            for (int v = 0; v < graph.verticesCounter; ++v) {
-                nextEdge[v] = graph.firstOutgoing[v];
-            }
+            System.arraycopy(graph.firstOutgoing, 0, nextEdge, 0, graph.verticesCounter);
             while (true) {
                 long pushed = dfs(source, Long.MAX_VALUE);
                 if (pushed == 0) {

@@ -20,7 +20,7 @@ public abstract class SimpleIntIntervalTree {
 
     protected abstract int modifyOperation(int value, int delta);
 
-    protected abstract int joinOperation(int levtValue, int rightValue);
+    protected abstract int joinOperation(int leftValue, int rightValue);
 
     public void modify(int index, int value) {
         index += size;

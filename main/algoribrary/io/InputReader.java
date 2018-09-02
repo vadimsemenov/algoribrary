@@ -8,7 +8,7 @@ import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 /**
- * Created by vadim on 15-03-2014.
+ * @author Vadim Semenov
  */
 public class InputReader {
     private final BufferedReader reader;
