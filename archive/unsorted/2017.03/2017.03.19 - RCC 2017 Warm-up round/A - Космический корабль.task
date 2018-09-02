@@ -1,0 +1,35 @@
+41 A - Космический корабль
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+2 5 3
+
+6 2 3 5
+
+1
+1
+14 5
+-1 1 0 1 -1
+
+12 -1 1 1 -1 0
+
+1
+12 output/tasks
+16 -Xmx256M -Xss64M
+4 Main
+11 tasks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.03.19
+22 RCC 2017 Warm-up round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

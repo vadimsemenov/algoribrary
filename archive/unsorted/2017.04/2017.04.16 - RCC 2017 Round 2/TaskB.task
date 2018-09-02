@@ -1,0 +1,28 @@
+5 TaskB
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+21 2
+9 5 12 5
+1 10 3 100
+9 36 5
+3 10
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.04.16
+16 RCC 2017 Round 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

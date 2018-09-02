@@ -1,0 +1,33 @@
+35 F - Процессоры-лжецы
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+4 2 3
+
+2 2
+
+1
+1
+4 6 6
+
+3 10
+
+1
+12 output/tasks
+8 -Xmx512M
+4 Main
+11 tasks.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.11
+21 Algorithm 2018 Warmup
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

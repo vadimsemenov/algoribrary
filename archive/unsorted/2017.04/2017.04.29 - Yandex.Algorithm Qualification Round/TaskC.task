@@ -1,0 +1,47 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+11 2
+1 1
+1 2
+0
+3 2 3
+1
+1
+23 4
+1 2 3 4
+3 2 3 4
+0
+0
+0
+5 10 19
+1
+2
+34 5
+50 40 30 20 10
+2 2 3
+1 4
+0
+1 5
+0
+7 150 350
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.04.29
+36 Yandex.Algorithm Qualification Round
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

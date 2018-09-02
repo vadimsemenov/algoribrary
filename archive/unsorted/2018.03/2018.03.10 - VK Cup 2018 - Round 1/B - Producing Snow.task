@@ -1,0 +1,37 @@
+18 B - Producing Snow
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+16 3
+10 10 5
+5 7 2
+
+7 5 12 4
+
+1
+1
+30 5
+30 25 20 15 10
+9 10 12 4 13
+
+14 9 20 35 11 25
+
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.03.10
+21 VK Cup 2018 - Round 1
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

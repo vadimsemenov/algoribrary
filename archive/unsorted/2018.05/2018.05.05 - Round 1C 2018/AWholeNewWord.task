@@ -1,0 +1,58 @@
+13 AWholeNewWord
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+110 5
+4 1
+A
+B
+C
+D
+4 2
+WW
+AA
+SS
+DD
+4 2
+AA
+AB
+BA
+BB
+3 4
+CAKE
+TORN
+SHOW
+5 7
+HELPIAM
+TRAPPED
+INSIDEA
+CODEJAM
+FACTORY
+
+
+66 Case #1: -
+Case #2: WA
+Case #3: -
+Case #4: CORN
+Case #5: HRAPPED
+
+
+1
+12 output/tasks
+6 -Xmx1G
+8 Solution
+19 tasks.AWholeNewWord
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.05.05
+13 Round 1C 2018
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

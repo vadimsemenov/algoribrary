@@ -1,0 +1,42 @@
+15 B - Minesweeper
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+16 3 3
+111
+1*1
+111
+
+3 YES
+1
+1
+14 2 4
+*.*.
+1211
+
+2 NO
+1
+2
+7 2 1
+*
+.
+2 NO
+1
+12 output/tasks
+8 -Xmx256M
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.05.15
+79 Codeforces Round #483 (Div. 2) [Thanks, Botan Investments and Victor Shaburov!]
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

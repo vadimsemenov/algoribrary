@@ -1,0 +1,68 @@
+5 TaskC
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+67 2
+7 14
+0 0
+0 1
+0 2
+1 2
+2 2
+2 1
+2 0
+7 12
+0 0
+0 1
+0 2
+1 2
+2 2
+2 1
+2 0
+118 L 0
+0 0
+0 1
+0 2
+1 2
+2 0
+2 1
+2 2
+-1 0
+-1 1
+-1 2
+-2 2
+-3 2
+-3 1
+-3 0
+U 3
+0 0
+0 1
+0 2
+1 2
+2 2
+2 1
+2 0
+0 3
+1 3
+2 3
+0 4
+2 4
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.05.14
+31 Russian Code Cup 2017: Prefinal
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

@@ -1,0 +1,30 @@
+{
+  "name" : "D - Rocket",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "5 2\n1\n-1\n-1\n1\n0\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "output/tasks",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.26",
+  "contestName" : "Codeforces Round #499 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

@@ -1,0 +1,36 @@
+{
+  "name" : "F - Mars rover",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "10\nAND 9 4\nIN 1\nIN 1\nXOR 6 5\nAND 3 7\nIN 0\nNOT 10\nIN 1\nIN 1\nAND 2 8\n",
+    "output" : "10110",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\nNOT 2\nIN 1",
+    "output" : "1",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/tasks",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.26",
+  "contestName" : "Codeforces Round #499 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

@@ -1,0 +1,37 @@
+5 TaskB
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 5 3 2 1
+abc
+d
+e
+f
+def
+abcdef
+2 15
+1
+1
+11 1 1 1 1
+a
+z
+2 -1
+1
+12 output/tasks
+16 -Xmx256m -Xss64m
+4 Main
+11 tasks.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.05.14
+31 Russian Code Cup 2017: Prefinal
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

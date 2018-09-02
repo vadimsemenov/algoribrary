@@ -1,0 +1,39 @@
+{
+  "name" : "F - Compute Power",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n8 10 9 9 8 10\n1 1 1 1 1 1\n",
+    "output" : "9000\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6\n8 10 9 9 8 10\n1 10 5 5 1 10\n",
+    "output" : "1160\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/tasks",
+  "vmArgs" : "-Xmx256M -ea",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.06.16",
+  "contestName" : "Codeforces Round #488 by NEAR (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,51 @@
+{
+  "name" : "D - Open Communication",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "2 2\n1 2 3 4\n1 5 3 4\n",
+    "output" : "1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 2\n1 2 3 4\n1 5 6 4\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 3\n1 2 4 5\n1 2 1 3 2 3\n",
+    "output" : "-1\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2 3\n1 2 4 5\n1 3 2 3 4 6",
+    "output" : "-1",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "3 3\n1 2 3 4 8 9\n1 5 3 4 9 8",
+    "output" : "1",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "output/tasks",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.06.16",
+  "contestName" : "Codeforces Round #488 by NEAR (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

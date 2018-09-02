@@ -1,0 +1,28 @@
+18 Game of Two Stacks
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+26 1
+5 4 10
+4 2 4 6 1
+2 1 8 5
+1 4
+1
+12 output/tasks
+8 -Xmx256M
+8 Solution
+21 tasks.GameOfTwoStacks
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.02.19
+23 University CodeSprint 2
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

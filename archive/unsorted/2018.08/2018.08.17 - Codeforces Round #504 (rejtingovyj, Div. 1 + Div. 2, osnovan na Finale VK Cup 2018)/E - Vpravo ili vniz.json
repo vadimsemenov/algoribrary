@@ -1,0 +1,34 @@
+{
+  "name" : "E - Вправо или вниз",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n \nYES\n \nNO\n \nYES\n \nYES\n \n",
+    "output" : " \n? 1 1 4 4\n \n? 1 2 4 3\n \n? 4 1 4 4\n \n? 2 4 4 4\n \n! RDRRDD\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "output/tasks",
+  "vmArgs" : "-Xmx256M -ea",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.TaskE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.17",
+  "contestName" : "Codeforces Round #504 (рейтинговый, Div. 1 + Div. 2, основан на Финале VK Cup 2018)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : true,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
