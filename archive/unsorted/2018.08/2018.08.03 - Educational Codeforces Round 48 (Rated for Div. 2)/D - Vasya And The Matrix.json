@@ -1,0 +1,35 @@
+{
+  "name" : "D - Vasya And The Matrix",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "2 3\n2 9\n5 3 13\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 3\n1 7 6\n2 15 12\n",
+    "output" : "NO",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

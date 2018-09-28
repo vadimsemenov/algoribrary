@@ -1,0 +1,39 @@
+{
+  "name" : "B - Неестественные условия",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6 5\n",
+    "output" : "6 \n7\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8 16\n",
+    "output" : "35 \n53\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.29",
+  "contestName" : "AIM Tech Round 5 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

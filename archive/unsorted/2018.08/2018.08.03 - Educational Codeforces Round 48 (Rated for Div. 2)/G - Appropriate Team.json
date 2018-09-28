@@ -1,0 +1,39 @@
+{
+  "name" : "G - Appropriate Team",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "12 2 2\n1 2 3 4 5 6 7 8 9 10 11 12\n",
+    "output" : "12\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "12 1 6\n1 3 5 7 9 11 12 10 8 6 4 2\n",
+    "output" : "30\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskG",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "task.TaskGTestCase" ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

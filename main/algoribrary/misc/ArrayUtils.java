@@ -180,6 +180,11 @@ public class ArrayUtils {
         Arrays.sort(array);
     }
 
+    public static <T> void sort(T[] array, Comparator<T> comparator) {
+        shuffle(array);
+        Arrays.sort(array, comparator);
+    }
+
     public static int[] resize(int[] array, int size) {
         int[] newArray = new int[size];
         System.arraycopy(array, 0, newArray, 0, array.length);

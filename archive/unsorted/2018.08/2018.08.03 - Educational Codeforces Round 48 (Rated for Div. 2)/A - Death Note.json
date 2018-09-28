@@ -1,0 +1,41 @@
+{
+  "name" : "A - Death Note",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "3 5\n3 7 9",
+    "output" : "0 2 1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 20\n10 9 19 2",
+    "output" : "0 0 1 1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 100\n99",
+    "output" : "0",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

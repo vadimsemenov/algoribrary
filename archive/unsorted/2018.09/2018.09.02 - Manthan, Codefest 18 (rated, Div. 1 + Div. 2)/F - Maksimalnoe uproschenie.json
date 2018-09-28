@@ -1,0 +1,44 @@
+{
+  "name" : "F - Максимальное упрощение",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 2\n9 1 10\n",
+    "output" : "29\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 3\n5 8 7 1 9\n",
+    "output" : "34\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 3\n1 7 4 3 5 2 3 5 7 1",
+    "output" : "128",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.02",
+  "contestName" : "Manthan, Codefest 18 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

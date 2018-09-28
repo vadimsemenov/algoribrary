@@ -1,0 +1,39 @@
+{
+  "name" : "E - Rest In The Shades",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "-3 1 6\n2\n2 4\n6 7\n5\n3 1\n1 3\n6 1\n6 4\n7 6\n",
+    "output" : "5.000000000000000\n3.000000000000000\n0.000000000000000\n1.500000000000000\n2.000000000000000\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "-1 1 2\n1\n2 3\n9\n1 1\n1 2\n1 3\n2 1\n2 2\n2 3\n3 1\n3 2\n3 3",
+    "output" : "0.000000000000000\n0.000000000000000\n0.000000000000000\n0.000000000000000\n0.000000000000000\n0.000000000000000\n1.000000000000000\n0.500000000000000\n0.333333333333333",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "1e-7",
+  "testClasses" : [ ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

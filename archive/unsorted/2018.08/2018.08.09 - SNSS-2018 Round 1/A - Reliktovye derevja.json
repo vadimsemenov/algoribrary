@@ -1,0 +1,109 @@
+{
+  "name" : "A - Реликтовые деревья",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2018\n",
+    "output" : "116634\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1",
+    "output" : "1",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2",
+    "output" : "1",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "3",
+    "output" : "2",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "4",
+    "output" : "3",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "5",
+    "output" : "4",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "6",
+    "output" : "6",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "7",
+    "output" : "7",
+    "index" : 8,
+    "active" : true
+  }, {
+    "input" : "8",
+    "output" : "9",
+    "index" : 9,
+    "active" : true
+  }, {
+    "input" : "12435",
+    "output" : "2657342",
+    "index" : 10,
+    "active" : true
+  }, {
+    "input" : "61236",
+    "output" : "41851892",
+    "index" : 11,
+    "active" : true
+  }, {
+    "input" : "8887777",
+    "output" : "228500475169",
+    "index" : 12,
+    "active" : true
+  }, {
+    "input" : "44477",
+    "output" : "24070500",
+    "index" : 13,
+    "active" : true
+  }, {
+    "input" : "1000000000",
+    "output" : "802692214297940",
+    "index" : 14,
+    "active" : true
+  }, {
+    "input" : "999999999",
+    "output" : "802691950492500",
+    "index" : 15,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M -ea",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.09",
+  "contestName" : "SNSS-2018 Round 1",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

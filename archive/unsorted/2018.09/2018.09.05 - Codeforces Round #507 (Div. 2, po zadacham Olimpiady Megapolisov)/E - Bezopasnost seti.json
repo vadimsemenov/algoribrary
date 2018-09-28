@@ -1,0 +1,39 @@
+{
+  "name" : "E - Безопасность сети",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 4 2\n0 1 0 1\n1 2\n2 3\n3 4\n4 1\n",
+    "output" : "50\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 5 3\n7 1 7 2\n1 2\n2 3\n3 4\n4 1\n2 4\n",
+    "output" : "96\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.05",
+  "contestName" : "Codeforces Round #507 (Div. 2, по задачам Олимпиады Мегаполисов)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

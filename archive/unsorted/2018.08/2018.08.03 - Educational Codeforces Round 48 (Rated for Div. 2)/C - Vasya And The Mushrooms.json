@@ -1,0 +1,36 @@
+{
+  "name" : "C - Vasya And The Mushrooms",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "3\n1 2 3\n6 5 4\n",
+    "output" : "70\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n1 1000 10000\n10 100 100000\n",
+    "output" : "543210\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

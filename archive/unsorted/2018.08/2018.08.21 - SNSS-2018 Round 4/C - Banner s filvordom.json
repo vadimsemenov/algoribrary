@@ -1,0 +1,34 @@
+{
+  "name" : "C - Баннер с филвордом",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "fillxxxx\ndrowxxxx\ncoolcozz\ndtiodolz\noitqqqqz\nyyyyyyyy\nabacabac\nsswwwwwd\n10\nss\nwwwww\nxxxxxxxx\nyyyyyyyy\nzzzz\nqqqq\nfillword\ncoolcool\ndoitdoit\nabacabacd\n",
+    "output" : "7 7 7 7 3 3 3 3 \n7 7 7 7 3 3 3 3 \n8 8 8 8 8 8 5 5 \n9 9 9 9 9 8 8 5 \n9 9 9 6 6 6 6 5 \n4 4 4 4 4 4 4 4 \n10 10 10 10 10 10 10 10 \n1 1 2 2 2 2 2 10 \n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.21",
+  "contestName" : "SNSS-2018 Round 4",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

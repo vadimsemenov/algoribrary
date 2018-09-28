@@ -1,0 +1,41 @@
+{
+  "name" : "A - Piles With Stones",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "5\n1 2 3 4 5\n2 1 4 3 5",
+    "output" : "Yes",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n1 1 1 1 1\n1 0 1 0 1",
+    "output" : "Yes",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\n2 3 9\n1 7 9",
+    "output" : "No",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.30",
+  "contestName" : "Codeforces Round #500 (Div. 2) [based on EJOI]",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

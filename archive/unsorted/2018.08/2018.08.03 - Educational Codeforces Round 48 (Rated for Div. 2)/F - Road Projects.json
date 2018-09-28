@@ -1,0 +1,36 @@
+{
+  "name" : "F - Road Projects",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "7 2\n1 2 18\n2 3 22\n3 4 24\n4 7 24\n2 6 4\n3 5 12\n1\n100\n",
+    "output" : "83\n88",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 4\n1 2 5\n2 3 10\n2\n4\n8\n16",
+    "output" : "2\n4\n8\n15",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.03",
+  "contestName" : "Educational Codeforces Round 48 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

@@ -1,0 +1,59 @@
+{
+  "name" : "F - The Neutral Zone",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "12 0 0 1 0\n",
+    "output" : "63",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 1 2 3 4\n",
+    "output" : "136\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "300000000 123 4567 89 987632",
+    "output" : "3643602674",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1 1023 123004 4552 228",
+    "output" : "0",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "300000000 0 0 1 0",
+    "output" : "2157335784",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "50 77509 917257 256046 85912",
+    "output" : "2189425894",
+    "index" : 5,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx16M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.08",
+  "contestName" : "Codeforces Round #502 (in memory of Leopoldo Taravilse, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

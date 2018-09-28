@@ -1,0 +1,36 @@
+{
+  "name" : "C - Photo of The Sky",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "4\n4 1 3 2 3 2 1 3",
+    "output" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n5 8 5 5 7 5\n",
+    "output" : "0",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.30",
+  "contestName" : "Codeforces Round #500 (Div. 2) [based on EJOI]",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

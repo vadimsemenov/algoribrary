@@ -1,0 +1,74 @@
+{
+  "name" : "E - Вася и длинные числа",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "135\n1\n15\n",
+    "output" : "2\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "10000\n0\n9\n",
+    "output" : "1\n",
+    "index" : 1,
+    "active" : false
+  }, {
+    "input" : "123123123123 123 123123123",
+    "output" : "18",
+    "index" : 2,
+    "active" : false
+  }, {
+    "input" : "1023123123123 123 123123123",
+    "output" : "17",
+    "index" : 3,
+    "active" : false
+  }, {
+    "input" : "1010 0 10",
+    "output" : "4",
+    "index" : 4,
+    "active" : false
+  }, {
+    "input" : "139000 0 8",
+    "output" : "0",
+    "index" : 5,
+    "active" : false
+  }, {
+    "input" : "11111 11 11",
+    "output" : "0",
+    "index" : 6,
+    "active" : false
+  }, {
+    "input" : "111111 11 11",
+    "output" : "1",
+    "index" : 7,
+    "active" : false
+  }, {
+    "input" : "3419862304231404040 0 1984688834",
+    "output" : "108832",
+    "index" : 8,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskE",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "task.TaskETestCase" ],
+  "date" : "2018.09.20",
+  "contestName" : "Educational Codeforces Round 51 (рейтинговый для Див. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,61 @@
+{
+  "name" : "D - Chemical table",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD"
+  },
+  "output" : {
+    "type" : "STANDARD"
+  },
+  "tests" : [ {
+    "input" : "2 2 3\n1 2\n2 2\n2 1",
+    "output" : "0",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1 5 3\n1 3\n1 1\n1 5",
+    "output" : "2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4 3 6\n1 2\n1 3\n2 2\n2 3\n3 1\n3 3",
+    "output" : "1",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2 2 2\n1 1\n2 2",
+    "output" : "1",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "2 3 3\n1 1\n2 2\n1 2",
+    "output" : "1",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "3 3 0",
+    "output" : "5\n",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "1 20 0",
+    "output" : "20",
+    "index" : 6,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.30",
+  "contestName" : "Codeforces Round #500 (Div. 2) [based on EJOI]",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false
+}

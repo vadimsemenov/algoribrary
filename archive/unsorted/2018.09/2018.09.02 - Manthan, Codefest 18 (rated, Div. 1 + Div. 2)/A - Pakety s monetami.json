@@ -1,0 +1,54 @@
+{
+  "name" : "A - Пакеты с монетами",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n",
+    "output" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n",
+    "output" : "2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "8",
+    "output" : "4",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "7",
+    "output" : "3",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "9",
+    "output" : "4",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.02",
+  "contestName" : "Manthan, Codefest 18 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

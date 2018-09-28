@@ -1,0 +1,83 @@
+{
+  "name" : "C - IP-адреса",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "172202118\n",
+    "output" : "1.72.202.118\n17.2.202.118\n17.220.2.118\n17.220.21.18\n17.220.211.8\n172.20.2.118\n172.20.21.18\n172.20.211.8\n172.202.1.18\n172.202.11.8\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "172202118172202",
+    "output" : "",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "111111111111111",
+    "output" : "",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "111111111111",
+    "output" : "111.111.111.111",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "1111",
+    "output" : "1.1.1.1\n",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "10111",
+    "output" : "10.1.1.1",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "11011",
+    "output" : "1.10.1.1",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "1125611",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "255255255255",
+    "output" : "255.255.255.255",
+    "index" : 8,
+    "active" : true
+  }, {
+    "input" : "101010101",
+    "output" : "10.10.10.101\n",
+    "index" : 9,
+    "active" : true
+  }, {
+    "input" : "0000",
+    "output" : "0.0.0.0",
+    "index" : 10,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "task.TaskCTestCase" ],
+  "date" : "2018.08.14",
+  "contestName" : "SNSS-2018 Round 2",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

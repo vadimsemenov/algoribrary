@@ -1,0 +1,44 @@
+{
+  "name" : "B - Подстрочная сортировка",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\na\naba\nabacaba\nba\naba\n",
+    "output" : "YES\na\nba\naba\naba\nabacaba\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\na\nabacaba\nba\naba\nabab\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\nqwerty\nqwerty\nqwerty\n",
+    "output" : "YES\nqwerty\nqwerty\nqwerty\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.30",
+  "contestName" : "Codeforces Round #486 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

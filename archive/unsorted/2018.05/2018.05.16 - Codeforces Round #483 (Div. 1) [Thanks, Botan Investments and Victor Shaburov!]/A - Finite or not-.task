@@ -1,0 +1,43 @@
+18 A - Finite or not?
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+17 2
+6 12 10
+4 3 10
+
+16 Finite
+Infinite
+
+1
+1
+28 4
+1 1 2
+9 36 2
+4 12 3
+3 5 4
+
+30 Finite
+Finite
+Finite
+Infinite
+
+1
+11 output/task
+8 -Xmx256M
+4 Main
+10 task.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.05.16
+79 Codeforces Round #483 (Div. 1) [Thanks, Botan Investments and Victor Shaburov!]
+1
+26 algoribrary.io.InputReader
+19 java.io.PrintWriter
+0
+1

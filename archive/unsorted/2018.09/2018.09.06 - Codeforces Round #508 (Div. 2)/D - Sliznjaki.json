@@ -1,0 +1,49 @@
+{
+  "name" : "D - Слизняки",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n2 1 2 1\n",
+    "output" : "4",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n0 -1 -1 -1 -1\n",
+    "output" : "4",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n100500",
+    "output" : "100500",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n-100",
+    "output" : "-100",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "output/task",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "task.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.06",
+  "contestName" : "Codeforces Round #508 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "algoribrary.io.InputReader",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
